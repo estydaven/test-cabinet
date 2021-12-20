@@ -2084,6 +2084,7 @@ template {
 .article-content img {
 	width: auto;
 	max-width: 100%;
+	margin: 0 auto;
 }
 .object-article {
 	margin-bottom: 50px;
@@ -2316,7 +2317,128 @@ template {
 .diet-title__subhead {
 	color: #EB4040;
 }
-
+.diet {
+	background: linear-gradient(180deg, #FFFFFF 0%, #FFFFFF 100%);
+	box-shadow: 0px 30px 55px #DCD3CB;
+	border-radius: 20px;
+	padding: 25px 30px;
+}
+.diet__header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	margin-bottom: 15px;	
+}
+.diet__head {
+	font-size: 20px;	
+}
+.meals {
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+}
+.meal {
+	display: flex;
+	align-items: center;
+	margin-right: 20px;
+}
+.meal__image {
+	margin-right: 10px;
+}
+.meal__info {
+	text-transform: uppercase;
+	color: #272727;
+	font-size: 12px;
+	font-weight: 400;
+}
+.meal__head {
+	font-weight: 700;
+	margin: 0;
+}
+.meal__text {
+	margin: 5px 0 0 0;
+}
+.dish-calorie {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	padding: 10px 0;
+	border-bottom: 1px solid #e7e7e7;
+	border-top: 1px solid #e7e7e7;
+}
+.diet__calories {
+	display: flex;
+	align-items: center;
+	background-color: #FEEBEB;
+	border-radius: 200px;
+	height: 35px;
+	width: 290px;
+}
+.diet-calorie {
+	display: flex;
+	align-items: center;
+}
+.diet-calorie__percent {
+	border-radius: 50%;
+	background-color: #DAAAAA;
+	color: #ffffff;
+	margin: 0 8px 0 0;
+	line-height: 32px;
+	font-size: 13px;
+	width: 35px;
+	height: 35px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.diet-calorie__text {
+	margin: 0;
+	font-size: 11px;
+	color: #000000;
+	font-weight: 600;
+	margin-right: 13px;
+}
+.dish__image {
+	width: 245px;
+    height: 245px;
+    object-fit: contain;
+}
+.dish-block {
+	display: flex;
+	align-items: flex-start;
+	width: 100%;
+	padding-top: 5px;
+}
+.dish__info {
+	display: flex;
+	align-items: flex-start;
+}
+.dish-block__number {
+	width: 28px;
+	height: 28px;
+	background-color: #EB4040;
+	border-radius: 50%;
+	color: #ffffff;
+	display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+}
+.dish-block__inner {
+	width: calc(100% - 48px);
+	font-weight: 400;
+	color: #272727;
+}
+.dish-block__head {
+	font-size: 15px;
+	color: #000000;
+	font-weight: 700;
+}
+.dish-block__recept {
+	color: #787878;
+}
 .gyms {
 	margin-bottom: 26px;
 }
@@ -2331,7 +2453,6 @@ template {
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
-	justify-content: space-between;
 	column-gap: 10px;
 	margin-top: 15px;
 }
@@ -2341,19 +2462,28 @@ template {
 	min-height: 172px;
 	background-color: #FCF8F3;
 	border-radius: 15px;
+	margin-bottom: 10px;
+	padding-bottom: 10px;
 }
 .gym__image {
 	height: 116px;
-	display: flex;
+    display: flex;
     align-items: center;
     justify-content: center;
-	margin-bottom: 10px;
+    margin: 0 auto 10px;
+    width: 116px;
+}
+.gym__image img {
+	max-width: 100%;
+    height: 116px;
+    object-fit: contain;
 }
 .gym__head {
 	color: #000000;
 	font-size: 11px;
 	font-weight: 700;
 	margin: 0 0 5px 0;
+	padding: 0 5px;
 }
 .gym__subhead {
 	font-size: 11px;
@@ -3198,6 +3328,13 @@ button {
 	column-gap: 30px;
 	margin: 50px 0 30px 0;	
 }
+.homework-text {
+	background-color: #fff;
+    border-radius: 30px;
+    padding: 30px;
+    margin-bottom: 25px;
+	font-weight: 500;
+}
 .preview_goal {
 	margin: 50px 0 50px 0;	
 }
@@ -3850,6 +3987,14 @@ button {
 }
 
 .calories_h1{font-size:20px;text-transform:uppercase;color:#ba050c;height:31px;background:url(images/bg_top_h1.png)/no-repeat left top;padding:8px 0 0 15px;margin:0 0 1px}.calories_h2{color:#005676;margin-bottom:15px}.calories_img{float:right;border:3px solid #dec19a;margin-left:8px}.calories_img img{display:block}.calories_txt{background:#fcf9f4 url(../images/bg_text_cal.gif)no-repeat left top;padding:20px 15px 0;color:#666}.calories_txt_end{background:url(../images/bottom_txt_bg.gif) repeat-x left top;height:28px;overflow:hidden;margin:0 -15px}.sep1{height:1px;overflow:hidden;clear:both}.sep5{height:5px;overflow:hidden;clear:both}.sep10{height:10px;overflow:hidden;clear:both}.sep15{height:15px;overflow:hidden;clear:both}.calories_link1{background:url(images/link_1.gif) no-repeat left 50%}.calories_link2{background:url(images/link_2.gif) no-repeat left 50%}.calories_link3{background:url(images/link_3.gif) no-repeat left 50%}.calories_link1,.calories_link2,.calories_link3{display:inline-block;margin:5px 0;padding:2px 0 2px 20px;width:auto}.calories_link1:hover,.calories_link2:hover,.calories_link3:hover{text-decoration:none}.calories_head{background-color:#ecddc4}.calories_head td{color:#005676;padding:5px 0}.calories_head td.red{font-weight:700;color:#b60208}.calories_h2_table{color:#b60208;background:url(../images/icon_plus.gif) no-repeat left 50%;padding-left:20px;cursor:pointer;float:left;margin:5px 0 5px 1px;font-size: 15px;}.calories_h2_table1{color:#b60208;background:url(../images/icon_minus.gif) no-repeat left 50%!important;padding-left:20px;cursor:pointer;float:left;margin:5px 0 5px 1px}.calories_table_in{margin-left:23px;width:100%}.calories_table_in input{width:45px;font-size:11px!important;color:#666;height:16px;padding-top:1px}.calories_table_in span{background:#fff;border:1px solid #e1caae;width:55px;display:block;height:22px;padding:1px 0 0 3px;overflow:hidden}.calories_table_in div{background:#ecddc4;font-weight:700;color:#b60208;width:80px;display:block;height:20px;padding:1px 0 0 3px;overflow:hidden}.calories_table_in td{padding-bottom:8px}.calories_total{float:right;background:#ecddc4;font-weight:700;color:#b60208;width:45px;display:block!important;height:16px;padding:1px 0 0 3px;margin:6px 13px 0 0;overflow:hidden}.calories_total_none{float:right;background:#ecddc4;font-weight:700;color:#b60208;width:45px;display:none !important;height:16px;padding:1px 0 0 3px;margin:6px 13px 0 0;overflow:hidden}.total_table td{border-top:1px solid #b60208;font-weight:700;padding:3px 0 0}.blood{background-color:#b60208}.blood td{color:#fff;padding:5px 0}.blood td.red{font-weight:700;color:#b60208}.big_total td{padding:5px 0 0 7px;font-weight:700}.big_total td h2{color:#b60208;margin:5px 0 5px 15px}.blood_total{background:#b60208;font-weight:700;color:#fff;width:85px;display:block;height:24px;padding:4px 0 0 3px;overflow:hidden}.left_links{width:300px;border:1px solid red}.right_buttons{width:200px;float:right;border:1px solid red}.calories_tr td{border-bottom:1px solid #ecddc4;padding:3px 0 3px 4px}.calories_tr.last td{border-bottom:0;padding:3px 0 3px 4px}.cal_print{width:600px}.cal_head{padding:30px 0 0 10px}.cal_head img{margin:0 20px 0 0}.cal_grey{background:#d8d8d8;height:3px;width:600px;margin:5px 0 20px}.cal_print_in{padding:12px;width:576px}.cal_print_in h2.red{color:#b60208;margin:8px 0 5px 1px}.cal_grey1{border-top:1px solid #d8d8d8;width:600px;margin:5px 0;padding:10px 0 0 15px;color:#000}.new_login_last td{padding-top:10px}.w-200{width: 183px;}
+.text-right {
+	text-align: right;
+}
+.descr {
+	padding: 30px;
+    background: #eb404047;
+    font-weight: 500;
+}
 
 @media (max-width: 1545px) {
 	.preview__image_calc {
@@ -4355,6 +4500,20 @@ button {
 	.tracker_calc {
 		padding: 20px 10px;
 	}
+	.diet {
+		padding: 0 10px 10px 10px;
+	}
+	.meals {
+		flex-wrap: wrap;
+	}
+	.meal {
+		margin-right: 0;
+		margin-bottom: 10px;
+		width: 50%;
+	}
+	.diet__calories {
+		width: 277px;
+	}
 }
 @media (max-width: 550px) {
 	.tracker__info {
@@ -4587,6 +4746,13 @@ button {
 	.curator__pic {
 		bottom: 65px;
 	}
+	.dish-calorie {
+		flex-direction: column;
+	}
+	.dish__image {
+		margin: 0 auto;
+		display: flex;
+	}
 }
 @media (max-width: 420px) {
 	.thought {
@@ -4627,6 +4793,15 @@ button {
 	.blood td {
 		font-size: 9px;
 	}
+	.meal {
+		width: 100%;
+	}
+	.dish-block__number {
+		margin: 0 10px 0 0;
+	}
+	.dish-block__head {
+		margin-top: 0;
+	}
 }
 @media (max-width: 385px) {
 	.preview__text_goal {
@@ -4637,6 +4812,19 @@ button {
 	}
 	.preview__block_goal {
 		padding-right: 20px;
+	}
+	.diet-calorie__percent {
+		margin: 0 5px 0 0;
+		font-size: 10px;
+		width: 25px;
+		height: 25px;
+	}
+	.diet-calorie__text {
+		font-size: 10px;
+		margin-right: 8px;
+	}
+	.diet__calories {
+		width: 230px;
 	}
 }
 @media (max-width: 375px) {

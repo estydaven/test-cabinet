@@ -136,3 +136,11 @@ $('#form-weight').on('submit', function(e){
     let formulaExtra = calorieQuick.text();
     calorieExtra.text(Math.floor(formulaExtra - (formulaExtra * 0.15)));
 })
+
+$('#save-btn').click(function(e){
+    e.preventDefault();
+
+    if ($('#save-btn').text('Сохранить')) {
+        $('#save-btn').text('Изменить');
+    }
+});
