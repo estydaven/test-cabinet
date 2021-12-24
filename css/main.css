@@ -2382,7 +2382,7 @@ template {
 }
 .diet-calorie__percent {
 	border-radius: 50%;
-	background-color: #DAAAAA;
+	background-color: #f0564e;
 	color: #ffffff;
 	margin: 0 8px 0 0;
 	line-height: 32px;
@@ -2438,6 +2438,28 @@ template {
 }
 .dish-block__recept {
 	color: #787878;
+}
+.dish-block__recept_hidden {
+	font-weight: 400;
+	padding-left: 48px;
+}
+.show_hide {
+	display: inline-block;
+    background-color: #eb4040;
+    color: #fff;
+    border-radius: 200px;
+    font-weight: bold;
+    font-size: 12px;
+    text-align: center;
+    text-transform: uppercase;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+    padding: 15px;
+    cursor: pointer;
+}
+.show_hide:hover {
+	opacity: .6;
 }
 .gyms {
 	margin-bottom: 26px;
@@ -3333,7 +3355,10 @@ button {
     border-radius: 30px;
     padding: 30px;
     margin-bottom: 25px;
-	font-weight: 500;
+	font-weight: 400;
+    line-height: 22px;
+    color: #787878;
+	font-size: 14px;
 }
 .preview_goal {
 	margin: 50px 0 50px 0;	
@@ -4753,6 +4778,9 @@ button {
 		margin: 0 auto;
 		display: flex;
 	}
+	.show_hide {
+		display: block;
+	}
 }
 @media (max-width: 420px) {
 	.thought {
@@ -4800,6 +4828,12 @@ button {
 		margin: 0 10px 0 0;
 	}
 	.dish-block__head {
+		margin-top: 0;
+	}
+	.dish-block__recept_hidden {
+		padding-left: 36px;
+	}
+	.dish-block__list {
 		margin-top: 0;
 	}
 }
