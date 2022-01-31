@@ -22,11 +22,6 @@
         $(".dish-content").hide();
         $(".show_hide").text('Показать подробное меню');
     });
-    $('.lk-nav__link--parent').on('click', function(e){
-        e.preventDefault();
-        $(this).siblings('.submenu').toggleClass('submenu--open');
-    });
-
 
     let answers = [
         [
@@ -142,10 +137,6 @@ $('#form-weight').on('submit', function(e){
 
 $('#save-btn').click(function(e){
     e.preventDefault();
-
-    if ($('#save-btn').text('Сохранить')) {
-        $('#save-btn').text('Изменить');
-    }
 });
 
 $(document).ready(function () {    

@@ -1283,13 +1283,11 @@ template {
 	align-items: flex-start;
 	margin: 0;
 	padding: 100px 0 95px;
-	row-gap: 40px;
 	list-style: none
 }
 
 @media screen and (max-width: 1024px) {
 	.lk-nav__list {
-		row-gap: 20px;
 		background: #FFFFFF;
 		border-radius: 30px;
 		-webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -1303,17 +1301,22 @@ template {
 	}
 }
 
-@media screen and (min-width: 1900px) {
-	.lk-nav__list {
-		row-gap: 60px
-	}
-}
-
 .lk-nav__item {
 	width: 100%;
-	padding: 0 20px
+	padding: 0 20px;
+	margin-bottom: 40px;
 }
 
+@media screen and (max-width: 1024px) {
+	.lk-nav__item {
+		margin-bottom: 30px
+	}
+}
+@media screen and (min-width: 1900px) {
+	.lk-nav__item {
+		margin-bottom: 60px
+	}
+}
 .lk-nav__item--parent-open:hover {
 	-webkit-transition: 0.3s all;
 	-o-transition: 0.3s all;
@@ -1398,7 +1401,11 @@ template {
 	padding-bottom: 15px;
 	max-height: 1100px
 }
-
+@media (max-width: 1024px) {
+	.lk-nav__link {
+		font-size: 18px;
+	}
+}
 .submenu {
 	margin: 0;
 	padding: 0;
@@ -1902,7 +1909,7 @@ template {
 	display: flex;	
 	flex-direction: column;
 	justify-content: space-between;
-	min-height: 385px;
+	min-height: 485px;
 }
 @media screen and (min-width: 768px) {
 	.articles__one {
@@ -1946,6 +1953,10 @@ template {
 	display: block;
 	border-radius: 30px;
 	overflow: hidden
+}
+.article-img {
+	object-fit: cover;
+	height: 230px;
 }
 .extra-image {
 	max-height: 230px;
@@ -2084,7 +2095,9 @@ template {
 .article-content img {
 	width: auto;
 	max-width: 100%;
-	margin: 0 auto;
+	margin: 0 auto 20px;
+	height: 600px;
+	object-fit: cover;
 }
 .object-article {
 	margin-bottom: 50px;
@@ -2568,6 +2581,38 @@ template {
 .work-name__input_weight {
 	width: 140px;
 }
+.work-name_user {
+	display: none;
+}
+.user-name {
+	display: flex;
+	align-items: center;
+	margin-bottom: 20px;
+  }
+  .user-name__avatar {
+	background-color: #FFFFFF;
+	border-radius: 200px;
+	width: 45px;
+	height: 45px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-right: 13px;
+  }
+  .user-name__name {
+	margin: 0 5px 0 0;
+	font-size: 16px;
+	color: #272727;
+	font-weight: 700;
+  }
+  .user-name__change {
+	text-transform: uppercase;
+	font-size: 10px;
+	font-weight: 700;
+	color: #eb4f6b;
+	letter-spacing: 2px;
+	cursor: pointer;
+  }
 .btn_weight {
 	width: 143px;
 }
@@ -4640,6 +4685,9 @@ button {
 	}
 	.home-work__title {
 		display: block;
+	}
+	.home-work__title_result {
+		display: flex;
 	}
 	.title__done {
 		margin-left: 0;
